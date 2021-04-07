@@ -17,13 +17,21 @@
       justify-content: space-between;
     }
 
+    .one-third {
+      width: 32%;
+      justify-content: space-between;
+    }
+
     .button {
       color: teal;
       border: 1px teal solid;
-      padding-top: 5px;
-      padding: 5px 15px;
       border-radius: 5px;
       text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding-top: .25em;
+      padding-bottom: .25em;
     }
 
     .player-card {
@@ -36,24 +44,28 @@
       width: 49%;
     }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
   </style>
 </head>
 
 <body>
   <div class="row">
-    <div>
+    <div class="one-third">
       <a class="button" href="/rock">
         Play Rock
       </a>
     </div>
 
-    <div>
+    <div class="one-third">
       <a class ="button" href="/paper">
         Play Paper
       </a>
     </div>
 
-    <div>
+    <div class="one-third">
       <a class ="button" href="/scissors">
         Play Scissors
       </a>
